@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+
+/* 1) Light (300) */
+@font-face {
+  font-family: 'SK Modernist Light';
+  src: url('/fonts/sk-modernist-light-webfont.woff2') format('woff2'),
+  url('/fonts/sk-modernist-light-webfont.woff')  format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2) Regular (400) */
+@font-face {
+  font-family: 'SK Modernist';
+  src: url('/fonts/sk-modernist-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3) Bold (700) */
+@font-face {
+  font-family: 'SK Modernist';
+  src: url('/fonts/sk-modernist-bold-webfont.woff2') format('woff2'),
+  url('/fonts/sk-modernist-bold-webfont.woff')  format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 4) Mono variant (optional separate family) */
+@font-face {
+  font-family: 'SK Modernist Mono';
+  src: url('/fonts/sk-modernist-mono-webfont.woff') format('woff');
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Modernist';
+  src: url('/fonts/Antonio-Regular.woff2') format("woff2");
+
+}
+
+@font-face {
+  font-family: 'perfect-nineties';
+  src: url('/fonts/PerfectlyNineties-Italic.woff2') format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap
+}
+
+.perfect-nineties {
+  font-family: 'perfect-nineties', sans-serif;
+  font-style: italic;
+
+}
+
+.sk-modernist-light{
+
+  font-family: 'SK Modernist Light', sans-serif;
+
+}
+
+@font-face {
+  font-family: 'staff condensed';
+  src: url('public/fonts/StaffCondensed-Medium.woff2') format("woff2");
+
+}
+
+.sk-modernist-mono{
+
+  font-family: 'Sk Modernist Mono', sans-serif;
+}
+
+
+.staff-condensed {
+  font-family: 'staff condensed', sans-serif;
+
+}
+@layer components{
+  .cFont{
+    font-family: 'Modernist', sans-serif !important;
+
+  }
+}
+
+/* 5) Make SK Modernist the default */
+html, body {
+
+  font-family: 'SK Modernist', sans-serif;
+  /* if you want to fall back to the mono for code blocks, you can do: */
+}
+code, pre {
+  font-family: 'SK Modernist Mono', monospace;
+}
+
+
+
+
+  .footer{
+    background-color: #0c0a09;
+
+  }
+
+.headingMargin{
+
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+.fIcons{
+  color:white;
+  margin: 4px;
+  @apply text-2xl;
+}
+
+/*.div{*/
+
+/*  font-family: "SK Modernist";*/
+/* font-weight: bolder;*/
+/*  font-size: 50px;*/
+/*}*/
+
+
+
+a:hover {
+  text-underline: #1a1a1a;
+}
+
+/*body {*/
+/*  margin: 0;*/
+/*  display: flex;*/
+/*  place-items: center;*/
+/*  min-width: 320px;*/
+/*  min-height: 100vh;*/
+/*}*/
+
+@font-face {
+  font-family: 'SK Modernist';
+  src: url('/fonts/Sk-Modernist-Regular.woff2') format("woff2");
+
+}
+
+
