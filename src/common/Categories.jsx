@@ -123,7 +123,7 @@ export const Categories = () => {
 
             {/* Images for selected category */}
             {selectedCat && categoryImages[selectedCat] && (
-                <div className="grid grid-cols-3 py-4 items-center justify-center md:flex md:flex-wrap   text-center gap-2">
+                <div className="grid grid-cols-3 py-4 items-center justify-center md:flex md:flex-wrap   text-center gap-1  md:gap-2">
                     {categoryImages[selectedCat].map(({imgUrl, subLabel}, idx) => (
                         <CategoryImage key={idx} label={subLabel} imgUrl={imgUrl}/>
                     ))}
