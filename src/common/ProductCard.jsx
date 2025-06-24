@@ -35,9 +35,9 @@ export const ProductCard = ({
                 {/* 4) Add button, also absolute inside the wrapper */}
                 <button
                     onClick={onAdd}
-                    className="absolute bottom-2 right-2 bg-white rounded-full p-2 shadow hover:bg-gray-100 transition z-10"
+                    className="absolute bottom-2 right-2 bg-gray-500 rounded-full p-2 shadow hover:bg-gray-100 transition z-10"
                 >
-                    <FiPlus size={16} />
+                    <FiPlus size={18} className={'text-white'} />
                 </button>
 
 
@@ -45,16 +45,16 @@ export const ProductCard = ({
 
                  <div className="p-1">
                      <h3 className="font-bold  ">{title}</h3>
-                     <div className={'flex gap-x-2'}>
-                         <div className="mt-1 text-gray-500  line-through">
+                     <div className={' md:flex gap-x-2'}>
+                         <div className="md:text-[16px]  text-xs mt-1 text-gray-500  line-through">
                              PK Rs.{originalPrice?.toLocaleString()}
                          </div>
-                         <div className="mt-1  font-semibold">
+                         <div className="md:text-[16px]  text-xs mt-1  ">
                              PK Rs.{discountedPrice?.toLocaleString()}
                          </div>
                      </div>
 
-                        <div className="mt-1 font-light text-red-600">
+                        <div className="mt-1 font-light text-red-800 md:text-[13px] text-xs ">
                             {perItemText}
                         </div>
 

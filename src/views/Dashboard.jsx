@@ -41,20 +41,19 @@ export const Dashboard =()=>{
                 <RatingBanner/>
             </div>
 
-            <div className={'flex flex-col w-full justify-center items-center p-4 gap-y-3 bg-black'}>
+            <div className={'flex flex-col w-full justify-center items-center  gap-y-3 pb-4 bg-black'}>
 
-                <img className={'p-4'} src={'/images/welcome_bts.png'} alt={'welcome'}
-                     style={{width: '35%', height: 'auto'}}/>
+                <img className={'lg:max-w-[480px] mt-4 w-auto h-auto flex'} src={'/images/welcome_bts.png'} alt={'welcome'}/>
 
                 <video
 
+                    className={'md:w-1/2 w-full h-auto'}
                     src="/videos/bts.mp4"
                     preload="auto"
                     poster="https://cdn2.videowise.com/custom-videos/thumbnails/1743723439412_da60d83e-56c6-41a0-80b5-64fdaaf69a87.jpeg"
                     autoPlay={false}
                     controls={true}
                     onContextMenu={handleContextMenu}  // Disable right-click menu here
-                    style={{width: '50%', height: 'auto'}} // optional styling
                 />
             </div>
 
