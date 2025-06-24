@@ -1,6 +1,5 @@
 import {RatingBanner} from "../common/RatingBanner.jsx";
 import {Stat} from "../common/Stat.jsx";
-import {Button} from "../common/Button.jsx";
 import {Categories} from "../common/Categories.jsx";
 import {ProductCard} from "../common/ProductCard.jsx";
 
@@ -30,7 +29,7 @@ export const Dashboard =()=>{
             <img className={'block md:hidden'} src={'promotions/promotional_sm_banner.jpg_v=1750343847&width=1500'}
                  alt={''}/>
 
-            <div className={'flex justify-center mt-12 mb-8 gap-x-12  '}>
+            <div className={'flex items-center justify-center mt-12 mb-8 gap-x-12  '}>
                 <Stat heading={'5 Million+'} subHeading={'Happy Customers'}/>
                 <Stat heading={'200K+ '} subHeading={'5-Star Reviews '}/>
                 <Stat heading={'100-Day'} subHeading={'Perfect Fit Guarantee'}/>

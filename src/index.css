@@ -70,7 +70,7 @@
 
 @font-face {
   font-family: 'staff condensed';
-  src: url('public/fonts/StaffCondensed-Medium.woff2') format("woff2");
+  src: url('/fonts/StaffCondensed-Medium.woff2') format("woff2");
 
 }
 

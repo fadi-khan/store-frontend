@@ -4,11 +4,11 @@ export const Stat = ({heading, subHeading}) => {
 
         <div className="flex flex-col items-center leading-none">
             {/* make the number shrink-wrap to its text width */}
-            <div className="inline-block text-[22px] font-extrabold ">
+            <div className="inline-block text-[18px]  md:text-[22px] font-extrabold ">
                 {heading}
             </div>
             {/* pull this upwards a hair so it sits snug under the first line */}
-            <div className="inline-block text-[14px] font-bold  ">
+            <div className="inline-block text-[11px] md:text-[14px] font-bold  ">
                 {subHeading}
             </div>
         </div>
