@@ -5,11 +5,11 @@ export  const FooterList = ({tagList=[], headline}) => {
 
     const [downClick, setDownClick] = useState(false);
     return (
-        <div className={'w-full'}>
+        <div className={'w-full '}>
 
             {/*for mobile*/}
-            <div className={"relative md:hidden justify-between items-center flex w-full mx-1 border-b "}>
-                <h3 className={"tracking-wider text-2xl  staff-condensed text-white   "}>{headline}</h3>
+            <div className={"relative md:hidden justify-between items-center flex w-full mx-1  border-b "}>
+                <h3 className={"tracking-wider text-[16px]    staff-condensed text-white   "}>{headline}</h3>
                 <FaChevronDown onClick={() => setDownClick(!downClick)}/>
             </div>
 

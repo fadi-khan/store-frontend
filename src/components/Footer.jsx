@@ -46,7 +46,7 @@ export const Footer = () => {
                     </form>
 
                     {/*<FooterList/>*/}
-                    <div className="flex space-x-4 text-white text-xl">
+                    <div className="flex space-x-4 text-white text-xl mb-1 md:mb-0">
                         <a href="#" aria-label="Facebook">
                             <FaFacebookF className={'fIcons'} /></a>
                         <a href="#" aria-label="Twitter">
