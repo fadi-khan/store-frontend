@@ -2,31 +2,24 @@ import {RatingBanner} from "../common/RatingBanner.jsx";
 import {Stat} from "../common/Stat.jsx";
 import {Categories} from "../common/Categories.jsx";
 import {ProductCard} from "../common/ProductCard.jsx";
+import {Animation} from "../common/Animation.jsx";
+
 
 export const Dashboard =()=>{
-    const handleContextMenu = (event) => {
-        event.preventDefault();
-    };
+
 
     return(
         <div className={'overflow-hidden'}>
 
             <div>
-                <video
-                    src="/videos/banner_video.mp4"
-                    autoPlay
-                    controls={false}
-                    loop
-                    muted
-                    onContextMenu={handleContextMenu}  // Disable right-click menu here
-                    style={{width: '100%', height: 'auto'}} // optional styling
-                />
+                <Animation url={"/videos/banner_video.mp4"} classNames={'hidden md:block'}/>
+                <Animation url={"/videos/mob_banner_vid.mp4"} classNames={'md:hidden block'}/>
             </div>
 
 
-            <img className={'hidden md:block'} src={'promotions/promotional_wide_banner.jpg_v=1750343825&width=3000'}
+            <img className={'hidden md:block'} src={'promotions/summer_banner2.png_v=1750343905&width=3000'}
                  alt={''}/>
-            <img className={'block md:hidden'} src={'promotions/promotional_sm_banner.jpg_v=1750343847&width=1500'}
+            <img className={'block md:hidden'} src={'promotions/summer_banner2_mob.jpg_v=1750343906&width=1500'}
                  alt={''}/>
 
             <div className={'flex items-center justify-center mt-12 mb-8 gap-x-12  '}>
@@ -53,7 +46,6 @@ export const Dashboard =()=>{
                     poster="https://cdn2.videowise.com/custom-videos/thumbnails/1743723439412_da60d83e-56c6-41a0-80b5-64fdaaf69a87.jpeg"
                     autoPlay={false}
                     controls={true}
-                    onContextMenu={handleContextMenu}  // Disable right-click menu here
                 />
             </div>
 
