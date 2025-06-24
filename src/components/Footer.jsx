@@ -13,7 +13,7 @@ export const Footer = () => {
 
     return (
         <footer className="footer bg-black text-white px-8 py-12  ">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-10 ">
                 {/* Stay in the Know */}
                 <div>
                     <h2 className="  tracking-wider text-3xl  staff-condensed mb-4 uppercase">Stay in the Know</h2>
