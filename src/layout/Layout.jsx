@@ -1,6 +1,7 @@
 import {Footer} from "../components/Footer.jsx";
 import {Topbar} from "../components/Topbar.jsx";
-import {Dashboard} from "../views/Dashboard.jsx";
+import {Outlet} from "react-router-dom";
+import Dashboard from "../views/Dashboard.jsx";
 
 export const Layout = () => {
 
@@ -10,7 +11,7 @@ export const Layout = () => {
     return(
         <>
             <Topbar/>
-            <Dashboard/>
+            <Outlet/>
             <Footer/>
         </>
     )

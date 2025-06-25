@@ -5,7 +5,7 @@ import {ProductCard} from "../common/ProductCard.jsx";
 import {Animation} from "../common/Animation.jsx";
 
 
-export const Dashboard =()=>{
+  const Dashboard =()=>{
 
 
     return(
@@ -80,3 +80,5 @@ export const Dashboard =()=>{
         </div>
     )
 }
+
+export default Dashboard

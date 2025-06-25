@@ -20,8 +20,9 @@ export const Footer = () => {
     }
 
     return (
-        <footer className="footer bg-black text-white px-8 py-12 w-full  ">
-            <div className="md:flex  w-full max-w-7xl   grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-10 ">
+        <footer className="footer bg-black text-white px-8 py-12 w-full justify-center  ">
+            <div
+                className="md:flex  md:w-full  md:justify-end   grid grid-cols-1 md:grid-cols-4 gap-2 md:ms-8  ">
                 {/* Stay in the Know */}
                 <div className={'flex flex-col items-center md:items-start'}>
                     <h1 className=" text-left tracking-wider lg:text-3xl text-[22px] staff-condensed mb-4 uppercase">
@@ -63,6 +64,8 @@ export const Footer = () => {
 
                 {/* Shop */}
 
+                <div className={'md:flex md:flex-row gap-y-2 flex-col flex justify-between w-full max-w-7xl'}>
+
                     <FooterList headline="SHOP" tagList={shopByList} />
 
                     {/* More Info */}
@@ -70,11 +73,12 @@ export const Footer = () => {
 
                     {/* Support */}
                     <FooterList headline="SUPPORT" tagList={customerSupport} />
+                </div>
 
             </div>
 
             {/* Bottom row */}
-            <div className="  mt-12 border-b border-white  py-6 grid grid-cols-2 md:flex  place-items-center md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6 text-xs">
+            <div className="  mt-12 border-b border-white  py-8 grid grid-cols-2 md:flex  place-items-center md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6 text-xs">
                 <Choice text={"Privacy Policy"}/>
                 <Choice text={"Terms & Conditions"}/>
                 <Choice text={"Accessibility Statement"}/>
