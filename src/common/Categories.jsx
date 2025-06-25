@@ -95,9 +95,12 @@ import React, {useState} from "react";
 import {Button} from "./Button.jsx";
 import {CategoryImage} from "./CategoryImage.jsx";
 import {categoryImages} from "../utils/imgWithLable.js";
+import {useNavigate} from "react-router-dom";
 
 export const Categories = () => {
     const [selectedCat, setSelectedCat] = useState("Bestsellers");
+
+    const navigate = useNavigate()
 
     // Each entry now has both imgUrl and subLabel
 
@@ -125,7 +128,7 @@ export const Categories = () => {
             {selectedCat && categoryImages[selectedCat] && (
                 <div className="grid grid-cols-3 py-4 items-center justify-center md:flex md:flex-wrap   text-center gap-1  md:gap-2">
                     {categoryImages[selectedCat].map(({imgUrl, subLabel}, idx) => (
-                        <CategoryImage key={idx} label={subLabel} imgUrl={imgUrl}/>
+                        <CategoryImage key={idx} label={subLabel} imgUrl={imgUrl} onCardClick={()=>navigate('/products')} />
                     ))}
                 </div>
             )}

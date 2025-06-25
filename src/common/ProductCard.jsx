@@ -1,5 +1,6 @@
 import React from "react";
 import { FiPlus } from "react-icons/fi";
+import {Price} from "./Price.jsx";
 
 export const ProductCard = ({
                                 badgeLeft = "#1 Most Liked",
@@ -46,12 +47,8 @@ export const ProductCard = ({
                  <div className="p-1">
                      <h3 className="font-bold  ">{title}</h3>
                      <div className={' md:flex gap-x-2'}>
-                         <div className="md:text-[16px]  text-xs mt-1 text-gray-500  line-through">
-                             PK Rs.{originalPrice?.toLocaleString()}
-                         </div>
-                         <div className="md:text-[16px]  text-xs mt-1  ">
-                             PK Rs.{discountedPrice?.toLocaleString()}
-                         </div>
+                         <Price  text={originalPrice} lineCut={true}/>
+                         <Price  text={discountedPrice} lineCut={false}/>
                      </div>
 
                         <div className="mt-1 font-light text-red-800 md:text-[13px] text-xs ">

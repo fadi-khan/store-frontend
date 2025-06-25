@@ -64,7 +64,7 @@ export const Footer = () => {
 
                 {/* Shop */}
 
-                <div className={'md:flex md:flex-row gap-y-2 flex-col flex justify-between w-full max-w-7xl'}>
+                <div className={'md:flex md:flex-row gap-y-3 flex-col flex justify-between w-full max-w-7xl'}>
 
                     <FooterList headline="SHOP" tagList={shopByList} />
 

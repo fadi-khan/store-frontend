@@ -18,7 +18,7 @@ export  const FooterList = ({tagList=[], headline}) => {
                   <div className={`py-4  grid grid-cols-2 md:block  ${downClick?'block':'hidden'}`}>
                       {
                           tagList.map((tag, index) => (
-                              <a style={{color:"#e2dad5"}} className={"md:flex md:flex-col  max-h-40 font-bold cursor-pointer  "}>{tag}</a>
+                              <a style={{color:"#e2dad5"}} className={"md:flex md:flex-col text-sm lg:text-[16px] max-h-40  cursor-pointer pl-1 md:pl-0   "}>{tag}</a>
                           ))
                       }
                   </div>

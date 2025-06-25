@@ -2,10 +2,10 @@
 
 
 export const Button =
-    ({ title, className='', disabled = false, onClick = () => {} }) => {
+    ({ title, className='px-[15px] py-[6px] rounded-md    ', disabled = false, onClick = () => {} }) => {
         return (
             <button
-                className={`${className} px-[15px] py-[6px] shrink-0  text-sm capitalize rounded-md border-1  border-gray-300 font-bold    items-center    `}
+                className={`${className }  border-1 border-gray-300 cursor-pointer  shrink-0  text-sm capitalize  font-bold    `}
                 disabled={disabled}
 
                 type={'button'}

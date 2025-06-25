@@ -17,7 +17,7 @@ export const Topbar = () => {
 
     return (
 
-        <div className={'sticky top-0 z-50'}>
+        <div className={'sticky top-0 z-50 border-b border-gray-300 '}>
 
             <div className={" bg-black text-white text-xs text-center py-2 font-bold capitalize"}>Major new color drop. Show now  →</div>
 

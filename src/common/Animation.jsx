@@ -12,7 +12,6 @@ export const Animation =({url, classNames})=>{
             loop
             muted
             onContextMenu={handleContextMenu}  // Disable right-click menu here
-            style={{width: '100%', height: 'auto'}} // optional styling
         />
 
     )

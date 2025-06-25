@@ -3,10 +3,9 @@ import {Layout} from "../layout/Layout.jsx";
 import {Navigate} from "react-router-dom";
 
 const Dashboard = lazy(() => import('../views/Dashboard.jsx'));
+const Products = lazy(() => import('../views/Products.jsx'));
 const NotFound = lazy(() => import('../views/PageNotFound.jsx'));
-// const Profile   = lazy(() => import('.Profile'));
-// const Settings  = lazy(() => import('./pages/Settings'));
-// const NotFound  = lazy(() => import('./pages/NotFound'));
+
 
 
 export const routes = [
@@ -16,7 +15,7 @@ export const routes = [
         children: [
             { index: true, element: <Navigate to="dashboard" replace /> },
             { path: 'dashboard', element: <Dashboard /> },
-            // { path: 'profile',   element: <Profile /> },
+            { path: 'products',   element: <Products /> },
             // { path: 'settings',  element: <Settings /> },
             { path: '*',         element: <NotFound /> }
         ]

@@ -9,10 +9,12 @@ export const Layout = () => {
 
 
     return(
-        <>
+        <div className={'flex flex-col'}>
             <Topbar/>
-            <Outlet/>
+            <main className=" content  flex-1 overflow-auto">
+                <Outlet />
+            </main>
             <Footer/>
-        </>
+        </div>
     )
 }

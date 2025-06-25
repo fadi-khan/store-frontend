@@ -13,7 +13,7 @@ import {Animation} from "../common/Animation.jsx";
 
             <div>
                 <Animation url={"/videos/banner_video.mp4"} classNames={'hidden md:block'}/>
-                <Animation url={"/videos/mob_banner_vid.mp4"} classNames={'md:hidden block'}/>
+                < Animation url={"/videos/mob_banner_vid.mp4"} classNames={'md:hidden block'}/>
             </div>
 
 
