@@ -110,7 +110,7 @@ export const Categories = () => {
     return (
         <div className="w-full  lg:px-4 pt-4 pb-3">
             {/* Category buttons */}
-            <div className="flex mb-2 mx-2 w-full lg:justify-center gap-x-2 overflow-hidden">
+            <div className="flex mb-2 mx-2 w-full lg:justify-center gap-x-2 ">
                 {labels.map((label) => (
                     <Button
                         key={label}
