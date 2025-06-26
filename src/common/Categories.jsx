@@ -116,7 +116,7 @@ export const Categories = () => {
                         key={label}
                         title={label}
                         onClick={() => setSelectedCat(label)}
-                        className={`flex-shrink-0 ${selectedCat === label
+                        className={`flex-shrink-0 px-[15px] py-[6px] ${selectedCat === label
                             ? "bg-black text-white"    // active state
                             : "bg-white text-black"}   `}
 
