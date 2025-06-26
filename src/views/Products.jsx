@@ -67,7 +67,7 @@ const Products = () => {
 
                       <div className="p-1 inline-flex flex-col gap-2 w-max">
                           {/* HEADER ROW */}
-                          <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-x-3 md:justify-between">
                               <div>
                                   <span className="font-bold">Size:</span> Choose your size.
                               </div>
@@ -90,7 +90,7 @@ const Products = () => {
                               {itemSizes.map((size) => (
                                   <Button
                                       key={size}
-                                      className="w-[66px] h-[35px] rounded-lg"
+                                      className="px-3 md:w-[66px] h-[35px] rounded-lg"
                                       title={size}
                                   />
                               ))}
@@ -101,16 +101,16 @@ const Products = () => {
 
                           {/*first button set*/}
                           <h1><span  className={'font-bold'}>Fabric: </span> Classic </h1>
-                          <div className={'flex gap-2 justify-between'}>
-                              <Button title={'Classic'} className={'w-1/2 py-1 rounded-lg bg-black text-white'}/>
-                              <Button title={'Pima '} className={'w-1/2 py-[6px] rounded-lg'} />
+                          <div className={'flex gap-2 '}>
+                              <Button title={'Classic'} className={' w-1/3 md:w-1/2 rounded-lg bg-black text-white'}/>
+                              <Button title={'Pima '} className={'w-1/3 md:w-1/2 py-[6px] rounded-lg'} />
                           </div>
 
                           {/*2nd button set*/}
                           <h1><span  className={'font-bold'}>Hem: </span> Straight </h1>
-                          <div className={'flex gap-2 justify-between'}>
-                              <Button title={'Straight'} className={'w-1/2 py-1 rounded-lg bg-black text-white'}/>
-                              <Button title={'Curved '} className={'w-1/2 py-[6px] rounded-lg'} />
+                          <div className={'flex gap-2 '}>
+                              <Button title={'Straight'} className={'w-1/3 md:w-1/2 py-1 rounded-lg bg-black text-white'}/>
+                              <Button title={'Curved '} className={'w-1/3 md:w-1/2 py-[6px] rounded-lg'} />
                           </div>
 
                       </div>
