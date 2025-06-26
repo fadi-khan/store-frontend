@@ -102,8 +102,8 @@ const Products = () => {
                           {/*first button set*/}
                           <h1><span  className={'font-bold'}>Fabric: </span> Classic </h1>
                           <div className={'flex gap-2 '}>
-                              <Button title={'Classic'} className={' w-1/3 md:w-1/2 rounded-lg bg-black text-white'}/>
-                              <Button title={'Pima '} className={'w-1/3 md:w-1/2 py-[6px] rounded-lg'} />
+                              <Button title={'Classic'} className={'w-1/2 rounded-lg bg-black text-white'}/>
+                              <Button title={'Pima '} className={'w-1/2 py-[6px] rounded-lg'} />
                           </div>
 
                           {/*2nd button set*/}
