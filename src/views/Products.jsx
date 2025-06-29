@@ -7,6 +7,7 @@ import {useState} from "react";
 import {itemSizes, PackPrice} from "../utils/index.js";
 import {ColorImage} from "../common/ColorImage.jsx";
 import {PerItemPrice} from "../common/PerItemPrice.jsx";
+import {DropDownMenu} from "../common/DropDownMenu.jsx";
 
 const Products = () => {
 
@@ -152,6 +153,8 @@ const Products = () => {
                               ))}
 
                           </div>
+
+                          <DropDownMenu dropDown={showPackMenu} data={numbers}  onCLick={togglePackMenu}/>
 
                       </div>
                   </div>
