@@ -4,14 +4,22 @@ import {Price} from "../common/Price.jsx";
 import {Button} from "../common/Button.jsx";
 import {OfferCard} from "../common/OfferCard.jsx";
 import {useState} from "react";
-import {itemSizes} from "../utils/index.js";
+import {itemSizes, PackPrice} from "../utils/index.js";
+import {ColorImage} from "../common/ColorImage.jsx";
+import {PerItemPrice} from "../common/PerItemPrice.jsx";
 
 const Products = () => {
 
     const [buildPack, setBuildPack] = useState(false)
-
+    const [showPackMenu, setShowPackMenu] = useState(false)
     const btnClass = "shadow-sm shadow-black rounded-full bg-white"
-    
+    const numbers = Array.from({ length: 15 }, (_, index) => index + 1);
+
+    const togglePackMenu = () => {
+        setShowPackMenu(!showPackMenu)
+    }
+
+
     return (
         <div className={'md:p-4 w-full '}>
 
@@ -102,23 +110,50 @@ const Products = () => {
                           {/*first button set*/}
                           <h1><span  className={'font-bold'}>Fabric: </span> Classic </h1>
                           <div className={'flex gap-2 '}>
-                              <Button title={'Classic'} className={'w-1/2 rounded-lg bg-black text-white'}/>
-                              <Button title={'Pima '} className={'w-1/2 py-[6px] rounded-lg'} />
+                              <Button title={'Classic'} className={'flex-1 w-rounded-lg bg-black text-white'}/>
+                              <Button title={'Pima '} className={'flex-1 py-[6px] rounded-lg'} />
                           </div>
 
                           {/*2nd button set*/}
                           <h1><span  className={'font-bold'}>Hem: </span> Straight </h1>
                           <div className={'flex gap-2 '}>
-                              <Button title={'Straight'} className={'w-1/2 py-1 rounded-lg bg-black text-white'}/>
-                              <Button title={'Curved '} className={'w-1/2 py-[6px] rounded-lg'} />
+                              <Button title={'Straight'} className={'flex-1 py-1 rounded-lg bg-black text-white'}/>
+                              <Button title={'Curved '} className={'flex-1 py-[6px] rounded-lg'} />
+                          </div>
+
+
+
+                          <h1><span  className={'font-bold'}>Colors:
+                          </span> Black, Carbon <span className={'underline'}>+4 More </span> </h1>
+
+                          <div className={'flex gap-2  '}>
+                              <ColorImage src={'https://www.trueclassictees.com/cdn/shop/files/Staple6pack_9fa81ddf-ba5f-4b6a-ac76-abe52ef013b6.jpg?v=1746510356&width=100'}/>
+                              <ColorImage src={'https://www.trueclassictees.com/cdn/shop/files/Seasonal-Classic-Crew-6-Pack_ba25c3eb-16f3-46f4-aa1a-237df4a71ccc.jpg?v=1750207427&width=100'}/>
+                              <ColorImage src={'https://www.trueclassictees.com/cdn/shop/files/Seasonal-Classic-Crew-6-Pack_fec52b4e-1908-44ed-af4e-309b0f5c529f.jpg?v=1750812948&width=100'}/>
+                              <ColorImage src={'https://www.trueclassictees.com/cdn/shop/files/CrewNeck6pack.jpg?v=1702941149&width=100'}/>
+                              <ColorImage src={'https://www.trueclassictees.com/cdn/shop/products/ALLBLACK_6PACK_f44f05b5-b0ef-48d1-bda5-79a2d0dbc3a4.jpg?v=1734816620&width=100'}/>
+
+                          </div>
+
+                          <h1><span  className={'font-bold'}>Pack Quantity: </span> 6 </h1>
+                          <div className={'flex gap-2 '}>
+                              {PackPrice.map((pack) => (
+                                  <Button title={
+                                      <div>
+                                          <div className={'text-sm'}>
+                                              {`${pack.size}-Pack`}
+                                          </div>
+                                          <PerItemPrice className={'text-[11px] font-bold'} perItemText={`PKRs.${pack.perItemPrice}/item`} />
+
+                                      </div>
+                                  }
+                                  className={'flex-1 gap-2 py-1.5'}
+                                  />
+                              ))}
+
                           </div>
 
                       </div>
-
-
-
-
-
                   </div>
 
 

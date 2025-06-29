@@ -1,6 +1,7 @@
 import React from "react";
 import { FiPlus } from "react-icons/fi";
 import {Price} from "./Price.jsx";
+import {PerItemPrice} from "./PerItemPrice.jsx";
 
 export const ProductCard = ({
                                 badgeLeft = "#1 Most Liked",
@@ -51,9 +52,7 @@ export const ProductCard = ({
                          <Price  text={discountedPrice} lineCut={false}/>
                      </div>
 
-                        <div className="mt-1 font-light text-red-800 md:text-[13px] text-xs ">
-                            {perItemText}
-                        </div>
+                     <PerItemPrice perItemText={perItemText}/>
 
                 </div>
         </div>
